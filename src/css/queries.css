@@ -1,0 +1,35 @@
+/* Breakpoints for responsive design */
+@media (min-width: 320px) {
+    /* Extra small devices (phones) */
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Small devices (tablets) */
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Medium devices (small laptops) */
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Large devices (desktops) */
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1320px) {
+    /* Your specific desktop breakpoint */
+    .container {
+        max-width: 1320px;
+    }
+}

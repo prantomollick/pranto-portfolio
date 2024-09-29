@@ -1,0 +1,221 @@
+/* Typography Class  */
+.display-1,
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5 {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.display-1 {
+    font-size: 8rem;
+    line-height: 8rem;
+}
+
+.heading-1 {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+}
+.heading-2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+}
+
+.heading-3 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+.heading-4 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.heading-5 {
+    font-size: 1.8rem;
+    line-height: 6.4rem;
+}
+
+.caption-1,
+.caption-2,
+.caption-3,
+.caption-4,
+.caption-5,
+.caption-6 {
+    font-family: inherit;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.caption-1 {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+}
+.caption-2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+.caption-3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+.caption-4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+.caption-5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.caption-6 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+.body-xxl-400,
+.body-xxl-500,
+.body-xl-400,
+.body-xl-500,
+.body-lg-400,
+.body-lg-400,
+.body-md-500,
+.body-sm-400,
+.body-sm-500,
+.body-xs-400,
+.body-xs-500 {
+    font-family: inherit;
+    font-style: normal;
+}
+
+.body-xxl-400 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: 400;
+}
+.body-xxl-500 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+}
+.body-xl-400 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+}
+.body-xl-500 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+}
+.body-lg-400 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+.body-lg-500 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+}
+.body-md-400 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+.body-md-500 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+.body-sm-400 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.body-sm-500 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+.body-xs-400 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+.body-xs-500 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+/* BUTTON */
+.p-btn-outline,
+.p-btn {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2.5rem 3.2rem;
+    display: inline-block;
+    border-radius: var(--border-radius-xs);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-btn,
+.p-btn:link,
+.p-btn:visited {
+    background-color: var(--bg-primary);
+    color: var(--text-gray-100);
+}
+
+.p-btn:active,
+.p-btn:link:hover,
+.p-btn:visited:hover {
+    background-color: var(--bg-primary-600);
+    color: var(--text-white);
+}
+
+.p-btn-outline:link,
+.p-btn-outline:visited {
+    border: 2px solid var(--border-primary);
+    color: var(--text-primary);
+}
+
+.p-btn-outline:active,
+.p-btn-outline:link:hover,
+.p-btn-outline:visited:hover {
+    border: 2px solid var(--border-primary);
+    color: var(--text-white);
+}
+
+.p-btn-outline::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) scale(0);
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: var(--bg-primary);
+}
+
+.p-btn-outline:hover::before {
+    transform: translateX(-50%) scale(5);
+}

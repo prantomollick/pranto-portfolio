@@ -1,0 +1,105 @@
+/* Global Reset */
+@import url("global.css");
+
+/* BreakPoints */
+@import url("queries.css");
+
+/* Utilities CSS */
+@import url("utilities.css");
+
+/********************************************************/
+/* HEADER SECTION & NAVIGATION */
+/*******************************************************/
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.9rem 0;
+}
+.nav__brand {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex: 1;
+}
+.nav__brand-img {
+    height: 4.8rem;
+}
+
+.nav__brand--text {
+    color: var(--text-gray-900);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.nav-list__link:link,
+.nav-list__link:visited {
+    color: var(--text-gray-500);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-list__link:link:active,
+.nav-list__link:visited:active,
+.nav-list__link:link:hover,
+.nav-list__link:visited:hover {
+    color: var(--text-gray-900);
+    font-weight: 700;
+}
+.nav-list__link.active {
+    color: var(--text-gray-900);
+    font-weight: 700;
+}
+
+.nav__action,
+.nav__action:link,
+.nav__action:visited {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2rem 2.4rem;
+    display: inline-block;
+    border-radius: var(--border-radius-xs);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-left: 3.2rem;
+    border: 2px solid var(--border-primary);
+    color: var(--text-primary);
+}
+
+.nav__action::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) scale(0);
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: var(--bg-primary);
+}
+
+.nav__action:hover::before {
+    transform: translateX(-50%) scale(5);
+}
+
+.nav__action:active,
+.nav__action:link:hover,
+.nav__action:visited:hover {
+    color: var(--text-white);
+}
