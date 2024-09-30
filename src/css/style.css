@@ -214,6 +214,11 @@
         stroke: var(--text-white);
     }
 
+    .hero__icon-5 svg {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
     .hero__icon-4 svg,
     .hero__icon-3 svg {
         width: 4.8rem;
@@ -299,5 +304,95 @@
 }
 
 /********************************************************/
-/* Clients */
+/* About US */
 /*******************************************************/
+.about-us-section {
+    padding: 16.4rem 0;
+    background: var(--bg-gradient-1);
+}
+
+.about-us-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-us__left {
+    width: 58rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    .about-us__social-caption {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        font-weight: 500;
+        color: var(--text-gray-900);
+    }
+
+    .about-us__social-icon {
+        display: flex;
+        align-items: center;
+        column-gap: 0.8rem;
+    }
+
+    .about-us__social {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    .about-us__social-icon-github,
+    .about-us__social-icon-instagram,
+    .about-us__social-icon-linkedin,
+    .about-us__social-icon-dribble,
+    .about-us__social-icon-x {
+        width: 4.8rem;
+        height: 4.8rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--text-gray-600);
+        border-radius: var(--border-radius-rounded);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--bg-primary-100);
+        }
+    }
+
+    .about-us__social-icon-github svg,
+    .about-us__social-icon-instagram svg,
+    .about-us__social-icon-linkedin svg,
+    .about-us__social-icon-dribble svg,
+    .about-us__social-icon-x svg {
+        fill: var(--bg-primary-600);
+    }
+
+    .about-us__social-icon-github svg:hover,
+    .about-us__social-icon-instagram svg:hover,
+    .about-us__social-icon-linkedin svg:hover,
+    .about-us__social-icon-dribble svg:hover,
+    .about-us__social-icon-x svg:hover {
+        fill: var(--bg-primary-900);
+    }
+}
+
+.about-us__right {
+    width: 64.4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+
+    .about-us__desc {
+        font-size: 2rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+        color: var(--text-gray-700);
+    }
+}
+.about-us__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+}
