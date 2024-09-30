@@ -11,7 +11,7 @@
 /* HEADER SECTION & NAVIGATION */
 /*******************************************************/
 
-.header {
+.header-section {
     position: relative;
     z-index: 1;
 }
@@ -70,14 +70,14 @@
 /********************************************************/
 /* HERO SECTION & NAVIGATION */
 /*******************************************************/
-.hero {
+.hero-section {
     background: var(--bg-gradient-1);
+    height: 100vh;
 }
 
 .hero__content {
     padding-top: 8.8rem; /* when remove top bar 16.4rem */
     padding-bottom: 8.4rem;
-    height: 100vh;
 
     display: flex;
     align-items: center;
@@ -184,11 +184,11 @@
         justify-content: center;
         background-color: var(--bg-primary);
         border-radius: var(--border-radius-md);
+    }
 
-        &svg {
-            width: 2.4rem;
-            height: 2.4rem;
-        }
+    .hero__icon-5 svg path,
+    .hero__icon-1 svg path {
+        stroke: var(--text-white);
     }
 
     .hero__icon-1 {
@@ -208,19 +208,22 @@
         justify-content: center;
         border-radius: var(--border-radius-md);
         box-shadow: var(--shadow-100);
-
-        &svg {
-            width: 2.4rem;
-            height: 2.4rem;
-        }
     }
 
-    .hero__icon-4,
-    .hero__icon-3 {
-        width: 2.4rem;
-        height: 2.4rem;
-        background-color: var(--bg-primary-600);
-        border-radius: var(--border-radius-rounded);
+    .hero__icon-2 svg path {
+        stroke: var(--text-white);
+    }
+
+    .hero__icon-4 svg,
+    .hero__icon-3 svg {
+        width: 4.8rem;
+        height: 4.8rem;
+        box-shadow: var(--shadow-100);
+    }
+
+    .hero__icon-4 svg path,
+    .hero__icon-3 svg path {
+        stroke: var(--bg-primary);
     }
 
     .hero__icon-3 {
@@ -236,7 +239,6 @@
     .hero__icon-5 {
         bottom: 9.6rem;
         right: 0;
-
         box-shadow: var(--shadow-300);
     }
 
@@ -260,3 +262,42 @@
         z-index: 1;
     }
 }
+
+/********************************************************/
+/* Clients */
+/*******************************************************/
+
+.clients-section-wraper {
+    padding: 8.4rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4.2rem;
+
+    .clients__title {
+        color: var(--text-gray-600);
+    }
+
+    .clients__logos {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 7.2rem;
+    }
+
+    .clients__logos-1,
+    .clients__logos-2,
+    .clients__logos-3,
+    .clients__logos-4,
+    .clients__logos-5,
+    .clients__logos-6,
+    .clients__logos-7,
+    .clients__logos-8,
+    .clients__logos-9 {
+        height: 4.2rem;
+    }
+}
+
+/********************************************************/
+/* Clients */
+/*******************************************************/
