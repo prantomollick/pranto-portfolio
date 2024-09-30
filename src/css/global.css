@@ -87,12 +87,17 @@
         rgba(243, 236, 255, 0.6) 100%
     );
 
+    --shadow-100: 22px 22px 87px 0px hsla(0, 0%, 0%, 0.14);
+    --shadow-200: 4px 4px 34px 0px hsla(0, 97%, 66%, 0.25);
+    --shadow-300: 8px 11px 32px 0px hsla(216, 99%, 59%, 0.5);
+
     /* Background */
     --bg-primary: var(--navy-blue-500);
     --bg-primary-100: var(--navy-blue-100);
     --bg-primary-600: var(--navy-blue-600);
     --bg-primary-900: var(--navy-blue-900);
     --bg-gradient-1: var(--gradient-1);
+    --bg-white: var(--white);
 
     /* Text Color */
     --text-primary: var(--navy-blue-500);
@@ -111,6 +116,9 @@
 
     /* Border Radius */
     --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+
     --border-radius-rounded: 100%;
 
     /* line-height: 1.5;
