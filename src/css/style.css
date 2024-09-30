@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.9rem 0;
+    padding: 2.3rem 0;
 }
 .nav__brand {
     display: flex;
@@ -64,42 +64,70 @@
 .nav__action,
 .nav__action:link,
 .nav__action:visited {
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1;
-    padding: 2rem 2.4rem;
-    display: inline-block;
-    border-radius: var(--border-radius-xs);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
     margin-left: 3.2rem;
-    border: 2px solid var(--border-primary);
-    color: var(--text-primary);
 }
 
-.nav__action::before {
-    content: "";
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    border-radius: 100%;
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%) scale(0);
-    z-index: -1;
-    transition: all 0.3s ease;
-    background-color: var(--bg-primary);
+/********************************************************/
+/* HERO SECTION & NAVIGATION */
+/*******************************************************/
+.hero {
+    background: var(--bg-gradient-1);
 }
 
-.nav__action:hover::before {
-    transform: translateX(-50%) scale(5);
+.hero__content {
+    padding-top: 8.8rem; /* when remove top bar 16.4rem */
+    padding-bottom: 8.4rem;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav__action:active,
-.nav__action:link:hover,
-.nav__action:visited:hover {
-    color: var(--text-white);
+.hero__content-left {
+    width: 64.8rem;
+    display: flex;
+    flex-direction: column;
+
+    .hero__content-caption {
+        margin-bottom: 2.4rem;
+        display: flex;
+        align-items: center;
+        column-gap: 2.4rem;
+
+        .hero__content-caption-line {
+            display: inline-block;
+            width: 8.8rem;
+            height: 2px;
+            border-radius: var(--border-radius-rounded);
+            background-color: var(--bg-primary);
+        }
+
+        .hero__content-caption-text {
+            color: var(--text-primary);
+            display: inline-block;
+            width: 19.8rem;
+        }
+    }
+
+    .hero__content-text {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        color: var(--text-gray-700);
+        margin: 3.2rem 0;
+    }
+
+    .hero__actions {
+        display: flex;
+        column-gap: 1.6rem;
+        align-items: center;
+    }
+}
+
+.hero__content-right {
+    width: 61.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
