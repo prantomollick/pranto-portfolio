@@ -97,12 +97,15 @@
     --bg-primary-100: var(--navy-blue-100);
     --bg-primary-600: var(--navy-blue-600);
     --bg-primary-900: var(--navy-blue-900);
+    --bg-gray-100: var(--gray-100);
     --bg-gradient-1: var(--gradient-1);
     --bg-white: var(--white);
     --bg-danger-100: var(--sunset-orange-100);
     --bg-danger: var(--sunset-orange-500);
     --bg-success-100: var(--forest-green-100);
     --bg-success: var(--forest-green-500);
+    --bg-success-700: var(--forest-green-700);
+    --bg-success-800: var(--forest-green-800);
 
     /* Text Color */
     --text-primary: var(--navy-blue-500);
@@ -118,6 +121,8 @@
     --text-danger: var(--sunset-orange-500);
     --text-success-100: var(--forest-green-100);
     --text-success: var(--forest-green-500);
+    --text-success-700: var(--forest-green-700);
+    --text-success-800: var(--forest-green-800);
 
     /* Border Color */
     --border-primary-50: var(--navy-blue-50);

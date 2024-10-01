@@ -871,3 +871,127 @@
 .testimonial__control-btn:hover svg path {
     stroke: var(--text-white);
 }
+
+/********************************************************/
+/* Service Section*/
+/*******************************************************/
+.service-section {
+    padding: 16.4rem 0;
+    background: var(--gradient-1);
+}
+
+.service-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+.service__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.service-heading {
+    color: var(--text-primary-800);
+}
+
+.service-desc {
+    font-family: inherit;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    color: var(--text-gray-700);
+}
+
+.service__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+}
+
+.service__card:link,
+.service__card:visited {
+    width: 42.4rem;
+    background-color: var(--bg-white);
+    display: inline-block;
+    padding: 4rem;
+    color: var(--text-primary-800);
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s ease;
+}
+
+.service__card-img-wrap {
+    width: 34.4rem;
+    height: 24.8rem;
+    padding: 2.8rem;
+    background-color: var(--bg-gray-100);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.service__card-img {
+    width: 100%;
+    height: 100%;
+}
+.service__card-title {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.service__card-text {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-gray-700);
+    margin-bottom: 1.6rem;
+}
+
+.service__card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.service__card-btn span {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    display: inline-block;
+    color: var(--text-success-700);
+
+    background-image: linear-gradient(
+        transparent 22px,
+        var(--bg-success-800) 20px
+    );
+    background-repeat: no-repeat;
+    background-size: 0%;
+    transition: background-size 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.service__card:hover {
+    box-shadow: var(--shadow-200);
+}
+
+.service__card:hover .service__card-btn-icon path {
+    stroke: var(--bg-success-800);
+}
+
+.service__card:hover .service__card-btn span {
+    color: var(--text-success-800);
+    background-size: 100%;
+}
