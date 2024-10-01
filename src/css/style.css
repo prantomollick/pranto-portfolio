@@ -1127,6 +1127,55 @@
     }
 }
 
+.footer__social-card {
+    padding: 3.2rem;
+    background: var(--bg-primary-100);
+}
+
+.footer__social-card-caption {
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--text-gray-900);
+
+    margin-bottom: 1.6rem;
+}
+
+.footer__social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer__social-icons-line {
+    width: 2.4rem;
+    height: 2px;
+    background-color: var(--bg-primary);
+}
+
+.footer__social-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: var(--border-radius-rounded);
+    background-color: var(--bg-white);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+}
+
+.footer__social-icon:hover {
+    background-color: var(--bg-primary-900);
+}
+
+.footer__contact-icon svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
 .footer__divider {
     width: 1.5px;
     height: auto;
