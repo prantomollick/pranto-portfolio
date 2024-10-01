@@ -2778,33 +2778,36 @@
 
                     <div class="footer__right">
                         <p class="footer__say-hi">Just say 👋 Hi</p>
-                        <form action="#">
-                            <div class="footer__form-group">
+                        <form class="footer__form">
+                            <div class="footer__form-inputs">
+                                <div class="footer__form-group">
+                                    <input
+                                        type="text"
+                                        placeholder="Full Name"
+                                        class="footer__form-input"
+                                        required
+                                    />
+                                    <input
+                                        type="email"
+                                        placeholder="Email Address"
+                                        class="footer__form-input"
+                                        required
+                                    />
+                                </div>
                                 <input
                                     type="text"
-                                    placeholder="Full Name"
-                                    class="footer__form-control"
+                                    placeholder="Subject"
+                                    class="footer__form-input footer__form-input-subject"
                                 />
-                                <input
-                                    type="email"
-                                    placeholder="Email Address"
-                                    class="footer__form-control"
-                                />
+
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="10"
+                                    class="footer__form-textarea-msg"
+                                ></textarea>
                             </div>
-                            <input
-                                type="text"
-                                placeholder="Message"
-                                class="footer__form-control"
-                            />
-
-                            <textarea
-                                name="message"
-                                id="message"
-                                cols="30"
-                                rows="10"
-                                class="footer__form-control-msg"
-                            ></textarea>
-
                             <button class="footer__form-control-btn">
                                 Send Message
                                 <span class="footer__form-control-btn-icon"

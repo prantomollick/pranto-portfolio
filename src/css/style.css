@@ -1187,3 +1187,53 @@
 .footer__right {
     width: 66rem;
 }
+
+.footer__say-hi {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    color: var(--gray-900);
+    margin-bottom: 3.2rem;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.footer__form-group {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.footer__form-input {
+    width: 36.2rem;
+    border: 1px solid var(--gray-200);
+    padding: 1.2rem 1.8rem 1.2rem;
+}
+
+.footer__form-input-subject {
+    width: 100%;
+}
+
+.footer__form-textarea-msg {
+    width: 100%;
+    height: 12.4;
+    margin-bottom: 3.2rem;
+}
+
+.footer__form-control::placeholder {
+    font-family: inherit;
+    font-weight: 400;
+    size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--gray-300);
+}
