@@ -154,9 +154,6 @@
         position: relative;
         z-index: 1;
 
-        .hero__person-img {
-        }
-
         &::before {
             content: "";
             width: 457px;
@@ -701,9 +698,6 @@
     background: var(--bg-primary-100);
 }
 
-.portfolio-heading {
-}
-
 .portfolio__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(64.8rem, 1fr));
@@ -1047,3 +1041,16 @@
 /********************************************************/
 /* Footer Section*/
 /*******************************************************/
+.footer-section {
+    padding: 16.4rem 0;
+    background: var(--gradient-1);
+}
+
+.footer__wraper {
+    padding: 5.6rem;
+    background-color: var(--bg-white);
+}
+
+.footer__left {
+    width: 42.4rem;
+}
