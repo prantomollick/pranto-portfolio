@@ -150,4 +150,4 @@ Open http://localhost:5173 in your browser to view the project.
 
 ## <a name="credit">🧾 Credit</a>
 
-<em><samll>This project is develope to followed by Pranto Mollick [prantomollick.com](https://prantomollick.com)</samll></em>
+<em><samll>This project is develope to followed by Pranto Mollick! [prantomollick.com](https://prantomollick.com)</samll></em>
