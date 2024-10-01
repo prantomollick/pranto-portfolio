@@ -7,6 +7,9 @@
 /* Utilities CSS */
 @import url("utilities.css");
 
+/* KeyFrames */
+@import url("keyframes.css");
+
 /********************************************************/
 /* HEADER SECTION & NAVIGATION */
 /*******************************************************/
@@ -421,6 +424,7 @@
 
 .about-us__heading {
     font-family: inherit;
+    text-transform: capitalize;
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
@@ -439,6 +443,7 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    margin-bottom: 0.4rem;
 
     span {
         position: relative;
@@ -453,13 +458,38 @@
         left: 0;
         width: 5px;
         height: 5px;
-        background-color: black;
         border-radius: var(--border-radius-rounded);
     }
 }
 
+.about-us__title {
+    font-family: inherit;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+    color: var(--text-gray-950);
+    margin-bottom: 1rem;
+}
+
+.about-us__desc {
+    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: var(--text-gray-700);
+}
+
 .about-us__heading-edu {
     color: var(--text-primary);
+}
+
+.about-us__edu-date {
+    color: var(--text-primary);
+    line-height: 2rem;
+
+    span::before {
+        background-color: var(--bg-primary);
+    }
 }
 
 .about-us__heading-icon svg {
@@ -484,12 +514,143 @@
     }
 }
 
+.about-us__work {
+    .about-us__work-icon {
+        width: 6.4rem;
+        height: 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-danger-100);
+
+        svg {
+            stroke: var(--text-danger);
+        }
+    }
+
+    .about-us__heading-work {
+        color: var(--text-danger);
+    }
+
+    .about-us__work-date {
+        color: var(--text-danger);
+        text-transform: capitalize;
+
+        span::before {
+            background-color: var(--bg-danger);
+        }
+    }
+}
+
 .about-us__act-int {
     width: 30rem;
+}
+
+.about-us__heading-act-int {
+    color: var(--text-success);
+
+    .about-us__activity-icon {
+        background-color: var(--bg-success-100);
+
+        svg {
+            stroke: var(--text-success);
+        }
+    }
+}
+
+.about-us__interest-list,
+.about-us__activity-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.about-us__interest-item,
+.about-us__activity-item {
+    display: flex;
+    align-items: center;
+    column-gap: 1.8rem;
+
+    font-family: inherit;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: var(--text-success);
+}
+
+.about-us__interest-item span:nth-child(1),
+.about-us__activity-item span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us__interest-item span:nth-child(2),
+.about-us__activity-item span:nth-child(2) {
+    text-transform: capitalize;
 }
 
 .about-us__interest-item span:nth-child(1) svg,
 .about-us__activity-item span:nth-child(1) svg {
     width: 3.2rem;
     height: 3.2rem;
+    stroke: var(--text-success);
+}
+
+/********************************************************/
+/* Skills Section*/
+/*******************************************************/
+
+.skills__wrapper {
+    padding: 8.4rem 0;
+    text-align: center;
+}
+
+.skills__tag {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    color: var(--text-gray-500);
+    background: var(--bg-success-100);
+    padding: 1rem 2rem;
+    border-radius: 3.2rem;
+
+    display: inline-block;
+    margin-bottom: 1.6rem;
+}
+
+.skills__heading {
+    color: var(--text-gray-600);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 6.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    column-gap: 5.8rem;
+    row-gap: 4.8rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.skills__list-link {
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--text-gray-600);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    align-items: center;
+}
+
+.skills__list-link svg {
+    width: 6.4rem;
+    height: 6.4rem;
+    animation: grayscaleToColor 2s linear infinite;
 }

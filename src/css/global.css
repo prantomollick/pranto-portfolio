@@ -7,7 +7,7 @@
 }
 
 :root {
-    --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 
     --navy-blue-50: #fafcff;
     --navy-blue-100: #c7e1ff;
@@ -98,6 +98,10 @@
     --bg-primary-900: var(--navy-blue-900);
     --bg-gradient-1: var(--gradient-1);
     --bg-white: var(--white);
+    --bg-danger-100: var(--sunset-orange-100);
+    --bg-danger: var(--sunset-orange-500);
+    --bg-success-100: var(--forest-green-100);
+    --bg-success: var(--forest-green-500);
 
     /* Text Color */
     --text-primary: var(--navy-blue-500);
@@ -109,6 +113,9 @@
     --text-gray-600: var(--gray-600);
     --text-gray-700: var(--gray-700);
     --text-gray-900: var(--gray-950);
+    --text-danger: var(--sunset-orange-500);
+    --text-success-100: var(--forest-green-100);
+    --text-success: var(--forest-green-500);
 
     /* Border Color */
     --border-primary: var(--navy-blue-500);
