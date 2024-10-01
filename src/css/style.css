@@ -396,3 +396,100 @@
     align-items: center;
     column-gap: 2.4rem;
 }
+
+/********************************************************/
+/* About US -- Details*/
+/*******************************************************/
+
+.about-us-details-wraper {
+    padding-top: 8.6rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-us__content {
+    width: 42.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4.2rem;
+}
+
+.about-us__heading {
+    font-family: inherit;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.about-us__date {
+    font-family: inherit;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    span {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1.2rem;
+    }
+
+    span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background-color: black;
+        border-radius: var(--border-radius-rounded);
+    }
+}
+
+.about-us__heading-edu {
+    color: var(--text-primary);
+}
+
+.about-us__heading-icon svg {
+    width: 4.4rem;
+    height: 4.4rem;
+}
+
+.about-us__heading-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: var(--border-radius-rounded);
+}
+
+.about-us__edu-icon {
+    background-color: var(--bg-primary-100);
+    svg {
+        stroke: var(--text-primary-600);
+    }
+}
+
+.about-us__act-int {
+    width: 30rem;
+}
+
+.about-us__interest-item span:nth-child(1) svg,
+.about-us__activity-item span:nth-child(1) svg {
+    width: 3.2rem;
+    height: 3.2rem;
+}
