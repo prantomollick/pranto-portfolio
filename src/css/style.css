@@ -1221,6 +1221,12 @@
     padding: 1.2rem 1.8rem 1.2rem;
 }
 
+.footer__form-input:focus {
+    outline: none;
+    /* border: 1px solid var(--border-primary); */
+    box-shadow: 0 0 5px var(--text-primary);
+}
+
 .footer__form-input-subject {
     width: 100%;
 }
@@ -1228,6 +1234,11 @@
     width: 100%;
     border: 1px solid var(--gray-200);
     padding: 1.2rem 1.8rem 1.2rem;
+}
+
+.footer__form-textarea-msg:focus {
+    box-shadow: 0 0 5px var(--text-primary);
+    outline: none;
 }
 
 .footer__form-textarea-msg {

@@ -129,6 +129,7 @@
     --border-primary: var(--navy-blue-500);
     --border-primary-600: var(--navy-blue-600);
     --border-gray-100: var(--gray-100);
+    --border-danger: var(--sunset-orange-500)
 
     /* Border Radius */
     --border-radius-xs: 4px;
