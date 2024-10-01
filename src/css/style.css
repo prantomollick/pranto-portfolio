@@ -1185,6 +1185,7 @@
 }
 
 .footer__right {
+    align-self: center;
     width: 66rem;
 }
 
@@ -1223,6 +1224,11 @@
 .footer__form-input-subject {
     width: 100%;
 }
+.footer__form-textarea-msg {
+    width: 100%;
+    border: 1px solid var(--gray-200);
+    padding: 1.2rem 1.8rem 1.2rem;
+}
 
 .footer__form-textarea-msg {
     width: 100%;
@@ -1236,4 +1242,44 @@
     size: 1.6rem;
     line-height: 2.4rem;
     color: var(--gray-300);
+}
+
+.footer__form-btn {
+    font-family: inherit;
+    color: var(--text-gray-100);
+    font-size: 1.6rem;
+
+    width: 20.9rem;
+    height: 5.6rem;
+    background-color: var(--bg-primary);
+    border-radius: var(--border-radius-md);
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    transition: all 0.3s ease;
+}
+
+.footer__form-btn-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    svg {
+        stroke: var(--text-gray-100);
+    }
+}
+
+.footer__form-btn:hover {
+    background-color: var(--bg-primary-600);
+    color: var(--text-white);
+}
+
+.footer__form-btn:hover .footer__form-btn-icon {
+    svg {
+        stroke: var(--text-white);
+    }
 }
