@@ -45,3 +45,20 @@
     text-align: center;
     color: var(--text-gray-500);
 }
+
+@media (max-width: 75em) {
+    /* Large devices (desktops smaller than 1200px) */
+    /* 10% down */
+    .stats__wrapper {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .stat {
+        width: 28.08rem;
+    }
+
+    .stat.stat-3 {
+        border-right: none;
+    }
+}

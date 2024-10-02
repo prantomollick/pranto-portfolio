@@ -54,14 +54,6 @@
     align-items: center;
 }
 
-@media (min-width: 75em) {
-    /* Large devices (desktops) 1200px */
-    .service__card:link,
-    .service__card:visited {
-        width: 40rem;
-    }
-}
-
 .service__card-img-wrap {
     width: 34.4rem;
     height: 24.8rem;
@@ -135,4 +127,29 @@
 .service__card:hover .service__card-btn span {
     color: var(--text-success-800);
     background-size: 100%;
+}
+
+/* Breakpoints for responsive design */
+@media (max-width: 75em) {
+    .service__card:link,
+    .service__card:visited {
+        /* 10%down */
+        width: 38.16rem;
+    }
+
+    .service__content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service__card-img-wrap {
+        /* 10% down */
+        width: 30.96rem;
+        height: 21.96rem;
+        padding: 2.8rem;
+        background-color: var(--bg-gray-100);
+        border-radius: var(--border-radius-sm);
+        overflow: hidden;
+        margin-bottom: 4rem;
+    }
 }
