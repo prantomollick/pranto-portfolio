@@ -174,7 +174,16 @@ ul {
 
 @media (max-width: 75em) {
     /* Large devices (desktops smaller than 1200px) */
+    /* 1rem = 10px; 9px/16px = 62.5% */
     html {
         font-size: 56.25%;
+    }
+}
+
+@media (max-width: 62em) {
+    /* Medium devices (small laptops) 992px*/
+    /* 1rem = 8px; 8.8px/16px = 53.125% */
+    html {
+        font-size: 55%; /* 960px in em */
     }
 }

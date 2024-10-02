@@ -344,3 +344,122 @@
         }
     }
 }
+
+@media (max-width: 62em) {
+    /* Medium devices (small laptops) 992px*/
+
+    .hero__content {
+        padding-top: 5.28rem;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .hero__content-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__heading {
+        text-align: center;
+    }
+    .hero__content-caption {
+        justify-content: center;
+    }
+
+    .hero__content-text {
+        font-size: 2.3rem;
+        line-height: 3.5rem;
+    }
+
+    .hero__content-right {
+        /* 5% down the size */
+        width: 58.71rem;
+
+        .hero__person-circle {
+            width: 36.632rem; /* 80% of 45.79rem */
+            height: 42.256rem; /* 80% of 52.82rem */
+
+            .hero__person-img {
+                height: 100%;
+            }
+
+            &::before {
+                width: 34.732rem; /* 80% of 43.415rem */
+                height: 34.732rem; /* 80% of 43.415rem */
+            }
+        }
+
+        .hero__icon-6 {
+            bottom: -4%;
+            left: 0%;
+        }
+
+        .hero__icon-1 {
+            top: 4.6rem;
+        }
+
+        .hero__icon-2 {
+            top: 7.4rem;
+            right: 4.2rem;
+        }
+
+        .hero__icon-3 {
+            left: 4.5rem;
+            top: 16rem;
+        }
+
+        .hero__icon-4 {
+            right: 6.5rem;
+            top: 17rem;
+        }
+
+        .hero__icon-5 {
+            bottom: 3.6rem;
+            right: 0px;
+            box-shadow: var(--shadow-300);
+        }
+
+        .hero__caption-card {
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            padding: 2rem;
+
+            h3 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .clients-section-wraper {
+        .clients__logos {
+            gap: auto;
+            row-gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clients__logos-1 svg,
+        .clients__logos-2 svg,
+        .clients__logos-3 svg,
+        .clients__logos-4 svg,
+        .clients__logos-5 svg,
+        .clients__logos-6 svg,
+        .clients__logos-7 svg,
+        .clients__logos-8 svg,
+        .clients__logos-9 svg {
+            height: 3.78rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    /* Small devices (tablets) 768px*/
+}
+
+@media (max-width: 30em) {
+    /* Extra small devices (phones) 480px*/
+}
