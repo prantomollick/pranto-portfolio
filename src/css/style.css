@@ -1041,7 +1041,7 @@
 /********************************************************/
 /* Footer Section*/
 /*******************************************************/
-.footer-section {
+.footer-contact {
     padding: 16.4rem 0;
     background: var(--gradient-1);
 }
@@ -1293,4 +1293,15 @@
     svg {
         stroke: var(--text-white);
     }
+}
+
+.footer-copyright__text {
+    padding: 3.2rem 0;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: var(--text-gray-500);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
