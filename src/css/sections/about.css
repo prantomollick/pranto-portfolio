@@ -1,0 +1,289 @@
+/********************************************************/
+/* About US */
+/*******************************************************/
+.about-us-section {
+    padding: 16.4rem 0;
+    background: var(--bg-gradient-1);
+}
+
+.about-us-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-us__left {
+    width: 58rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    .about-us__social-caption {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        font-weight: 500;
+        color: var(--text-gray-900);
+    }
+
+    .about-us__social-icon {
+        display: flex;
+        align-items: center;
+        column-gap: 0.8rem;
+    }
+
+    .about-us__social {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    .about-us__social-icon-github,
+    .about-us__social-icon-instagram,
+    .about-us__social-icon-linkedin,
+    .about-us__social-icon-dribble,
+    .about-us__social-icon-x {
+        width: 4.8rem;
+        height: 4.8rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--text-gray-600);
+        border-radius: var(--border-radius-rounded);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--bg-primary-100);
+        }
+    }
+
+    .about-us__social-icon-github svg,
+    .about-us__social-icon-instagram svg,
+    .about-us__social-icon-linkedin svg,
+    .about-us__social-icon-dribble svg,
+    .about-us__social-icon-x svg {
+        fill: var(--bg-primary-600);
+    }
+
+    .about-us__social-icon-github svg:hover,
+    .about-us__social-icon-instagram svg:hover,
+    .about-us__social-icon-linkedin svg:hover,
+    .about-us__social-icon-dribble svg:hover,
+    .about-us__social-icon-x svg:hover {
+        fill: var(--bg-primary-900);
+    }
+}
+
+.about-us__right {
+    width: 64.4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+
+    .about-us__desc {
+        font-size: 2rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+        color: var(--text-gray-700);
+    }
+}
+.about-us__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+}
+
+/********************************************************/
+/* About US -- Details*/
+/*******************************************************/
+
+.about-us-details-wraper {
+    padding-top: 8.6rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-us__content {
+    width: 42.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4.2rem;
+}
+
+.about-us__heading {
+    font-family: inherit;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.about-us__date {
+    font-family: inherit;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.4rem;
+
+    span {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1.2rem;
+    }
+
+    span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: var(--border-radius-rounded);
+    }
+}
+
+.about-us__title {
+    font-family: inherit;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+    color: var(--text-gray-950);
+    margin-bottom: 1rem;
+}
+
+.about-us__desc {
+    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: var(--text-gray-700);
+}
+
+.about-us__heading-edu {
+    color: var(--text-primary);
+}
+
+.about-us__edu-date {
+    color: var(--text-primary);
+    line-height: 2rem;
+
+    span::before {
+        background-color: var(--bg-primary);
+    }
+}
+
+.about-us__heading-icon svg {
+    width: 4.4rem;
+    height: 4.4rem;
+}
+
+.about-us__heading-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: var(--border-radius-rounded);
+}
+
+.about-us__edu-icon {
+    background-color: var(--bg-primary-100);
+    svg {
+        stroke: var(--text-primary-600);
+    }
+}
+
+.about-us__work {
+    .about-us__work-icon {
+        width: 6.4rem;
+        height: 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-danger-100);
+
+        svg {
+            stroke: var(--text-danger);
+        }
+    }
+
+    .about-us__heading-work {
+        color: var(--text-danger);
+    }
+
+    .about-us__work-date {
+        color: var(--text-danger);
+        text-transform: capitalize;
+
+        span::before {
+            background-color: var(--bg-danger);
+        }
+    }
+}
+
+.about-us__act-int {
+    width: 30rem;
+}
+
+.about-us__heading-act-int {
+    color: var(--text-success);
+
+    .about-us__activity-icon {
+        background-color: var(--bg-success-100);
+
+        svg {
+            stroke: var(--text-success);
+        }
+    }
+}
+
+.about-us__interest-list,
+.about-us__activity-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.about-us__interest-item,
+.about-us__activity-item {
+    display: flex;
+    align-items: center;
+    column-gap: 1.8rem;
+
+    font-family: inherit;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: var(--text-success);
+}
+
+.about-us__interest-item span:nth-child(1),
+.about-us__activity-item span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us__interest-item span:nth-child(2),
+.about-us__activity-item span:nth-child(2) {
+    text-transform: capitalize;
+}
+
+.about-us__interest-item span:nth-child(1) svg,
+.about-us__activity-item span:nth-child(1) svg {
+    width: 3.2rem;
+    height: 3.2rem;
+    stroke: var(--text-success);
+}

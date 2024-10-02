@@ -129,7 +129,7 @@
     --border-primary: var(--navy-blue-500);
     --border-primary-600: var(--navy-blue-600);
     --border-gray-100: var(--gray-100);
-    --border-danger: var(--sunset-orange-500)
+    --border-danger: var(--sunset-orange-500);
 
     /* Border Radius */
     --border-radius-xs: 4px;
@@ -144,6 +144,7 @@ html {
     1rem = 10px; 10px/16px = 62.5% */
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -169,4 +170,11 @@ a:visited {
 
 ul {
     list-style: none;
+}
+
+@media (max-width: 75em) {
+    /* Large devices (desktops smaller than 1200px) */
+    html {
+        font-size: 56.25%;
+    }
 }

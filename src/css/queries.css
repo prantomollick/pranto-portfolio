@@ -1,35 +1,37 @@
+/* Container styles */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1320px;
+}
+
 /* Breakpoints for responsive design */
-@media (min-width: 320px) {
-    /* Extra small devices (phones) */
-    .container {
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    /* Small devices (tablets) */
-    .container {
-        max-width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    /* Medium devices (small laptops) */
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    /* Large devices (desktops) */
+@media (max-width: 75em) {
+    /* Large devices (desktops smaller than 1200px) */
     .container {
         max-width: 1140px;
     }
 }
 
-@media (min-width: 1320px) {
-    /* Your specific desktop breakpoint */
+@media (max-width: 62em) {
+    /* Medium devices (small laptops) 992px*/
     .container {
-        max-width: 1320px;
+        max-width: 960px; /* 960px in em */
+    }
+}
+
+@media (max-width: 48em) {
+    /* Small devices (tablets) 768px*/
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 30em) {
+    /* Extra small devices (phones) 480px*/
+    .container {
+        max-width: 100%;
     }
 }
